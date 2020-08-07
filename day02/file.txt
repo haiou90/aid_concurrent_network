@@ -1,0 +1,7 @@
+-rw-rw-r-- 1 tarena tarena 734 6月  28 09:50 2.txt
+-rw-r--r-- 1 tarena tarena  16 6月  28 10:19 file.txt
+2020年 06月 28日 星期日 10:19:55 CST
+
+print("Hello kitty")
+
+print("hello world")

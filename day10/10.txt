@@ -1,0 +1,79 @@
+前情回顾
+
+1. 事务控制
+
+   事务： 通过sql语句做一件事情
+
+   begin   commit  rollback
+
+   原子性  一致性  隔离性   持久性
+
+   隔离级别： 读未提交 读已提交  可重复读 串行化
+
+2. 数据库优化
+
+   数据库设计范式
+
+   引擎的选择
+
+   字段类型的选择和键的选择
+
+   sql语句优化
+
+   表拆分
+
+3. 数据库的备份
+   create table [tb] select .....
+
+   mysqldump
+
+4. 用户和权限
+   创建用户  create user
+            drop user
+
+   权限设置   grant
+             revoke
+
+5. pymysql
+
+   db= pymysql.connect()
+   cur = db.concur()
+
+   读 ：　cur.execute(sql,[])
+         cur.fetchone()
+         cur.fetchmany()
+         cur.fetchall()
+
+   cur.close()
+   db.close()
+
+练习： 创建一个而数据库dict
+里面创建一个数据表words   id   word  mean
+讲dict.txt单词本中的所有单词和解释插入到对应数据库字段中
+
+数据处理
+
+文件 ： 文件的读写  正则表达式
+   重点 ： 文件的读写
+          简单的正则匹配
+
+数据库:
+   重点 ：　数据库的基本增删改查操作　（查）
+   　　　　　数据表的设计
+
+作业 ： 1. 写一个程序，使用udp。
+          要求，从客户端可以循环的输入单词，服务端查询到单词，讲
+          单词的解释发送给客户端，让客户端打印
+
+          单词通过数据表words查询
+
+          思路： 客户端输入一个单词，发送一次，然后等接收，打印
+                服务端，接收单词，查询单词 讲解释发送给客户端
+
+
+
+
+
+
+
+

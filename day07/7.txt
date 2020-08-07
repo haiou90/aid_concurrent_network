@@ -1,0 +1,62 @@
+前情回顾
+
+1. where 字句 （行筛选  row）
+
+   算数  比较   逻辑
+
+2. 修改和删除
+   update [tb] set col=val,.. where...
+
+   delete from [tb] where ...
+
+3. alter
+   alter table [tb] add/modify/change/drop/rename
+
+4. 时间数据类型
+
+   date   datetime  time  year  timestamp
+
+   curdate() now() curtime()
+
+5. 高级查询
+
+    模糊查询    like
+    正则       regexp
+    起名字      as
+    排序       order by
+    限制       limit
+    联合查询    union
+    子查询      （）  from后  where中
+
+
+练习1：使用book表
+1. 统计每位作家图书的平均价格
+2. 统计每个出版社出版图书的数量
+3. 统计相同时间出版图书的平均价格
+4. 查看总共有多少个出版社
+5. 筛选出那些出版过超过50元图书的出版社，并按照其
+出版图书的平均价格进行降序排序
+
+
+思考练习
+
+微信朋友圈：
+
+用户姓名
+用户密码
+用户电话
+朋友圈内容
+朋友圈图片
+发朋友圈的地点
+发朋友圈的时间
+朋友圈的点赞
+朋友圈的评论内容
+
+作业 ： 1. 将聚合索引语句熟练
+       2. E-R模型图中，教师  学生  课程表
+          根据E-R模型图建立起来
+
+       3.  朋友圈问题，设计并完成
+
+
+

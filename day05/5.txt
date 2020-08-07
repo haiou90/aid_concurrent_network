@@ -1,0 +1,55 @@
+前情回顾
+
+1.  os
+  os.path.getsize()
+  os.listdir()
+  os.path.isfile()
+
+2. 什么是正则表达式
+
+ 字串--》 普通字符和特殊符号 --》特殊符号有含义
+
+3. 元字符
+
+   匹配重复：  *  +  ?  {n}  {m,n}
+   匹配字符：  .  [] [^] \d \D \w \W \s \S
+   匹配位置： ^  $   \b   \B
+
+4. 正则匹配规则
+
+   * 匹配特定字符：  $ --> \$
+   * 贪婪非贪婪 ：   ab+ --> ab+?
+   * 分组：  ()  (?P<name>xxxxxx)
+
+5. re 模块
+   findall()   split()    sub()
+   finditer()  match()  search() -->match 对象
+
+    match对象--》group()  groupdict()  span()
+
+cookie：
+    正则在线：
+    https://tool.oschina.net/regex/#
+
+
+作业 ： 1. 熟练数据库 数据表  插入语句
+       2. 创建一个数据库 books 使用utf8编码
+
+          在数据库下创建一个数据表  book
+          字段： id  书名 作者  出版社  价格  备注
+          类型和约束自己拟定
+
+          在数据表中插入若干数据 （>8条）
+
+          价格： 30--120
+
+       3. 看student代码
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+前情回顾
+
+1. 表的关联查询
+
+    内连接  tb1 inner join tb2 on [条件]
+           select .. from  tb1,tb2 where ...
+
+    外连接  左  tb1 left join tb2 on [条件]
+           右  tb1 right join tb2 on [条件]
+
+2. 视图
+
+   作用 ： 简化复杂查询操作
+          获取想要的数据单独操作
+          操作结构清晰
+          数据更加安全
+
+   create [or replace] view [view] as [select...]
+   drop view [if exists] [view]
+
+3. 函数和存储过程
+
+   作用 ： 对sql语句封装
+
+   delimiter $$
+
+   create function func(uid int,...)
+   returns [return_type]
+   begin
+     declare a int;
+     .....
+     return val;
+   end
+
+   create procedure proc(in uid int,...)
+   begin
+     declare a int;
+     set a=(select xx from ...);
+     select xx from ... into a;
+     .....
+   end
+
+cookie :
+  事物操作 不可以回复 DDL语句
+
+  DDL : CREATE  DROP  ALTER
+  DML : SELECT DELETE UPDATE INSERT
+  DCL : COMMIT ROLLBACK  GRANT REVOKE
+
+练习： 查询操作
+input输入一个而学生的姓名查询这个学生信息
+
+作业： 1. 数据库总结
+ 
+
+
+
+
+
